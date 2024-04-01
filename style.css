@@ -1,0 +1,134 @@
+*{
+    
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    /* background-color: red; */
+    overflow-x: hidden;
+}
+
+.wrapper{
+    position: relative;
+    min-height: 100vh;
+    border: 5px solid greenyellow;
+}
+
+.add-button{
+    position: absolute;
+    right: 3rem;
+    bottom: 2rem;
+    border: none;
+    background-color: greenyellow;
+    font-size: 3rem;
+    padding: 2rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    z-index: 100;
+}
+
+
+
+.entry-box{
+    /* border: 2px solid red; */
+    /* margin-right: 2rem; */
+    padding:0 2rem;
+    background-color: rgba(209, 209, 254, 0.756);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    position: fixed;
+    right: 0;
+    left: auto;
+    top: 0;
+    z-index: 99;
+    transform: translateX(100rem);
+}
+
+.form-row{
+    width: 100%;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+label{
+    margin: 1rem 1rem 0 0;
+    display: inline-block;
+    font-size: 2rem;
+    /* text-align: end; */
+    /* border: 2px solid green; */
+}
+
+input{
+    padding: 1rem;
+    border-radius: 1rem;
+    flex: 1;
+}
+
+input[type="submit"]{
+    border: none;
+    background-color: blue;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+}
+
+
+.library-header,
+.library-list div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.book-row{
+    padding: 1rem 0;
+    border-bottom: 1px solid green;
+    width: 90%;
+    margin: auto;
+    text-align: start;
+}
+.book-row:nth-child(odd){
+    background-color: rgba(248, 209, 209, 0.126);
+}
+.book-row:nth-child(even){
+    background-color: rgba(187, 233, 236, 0.232);
+}
+
+h4{
+    text-transform: uppercase;
+}
+
+.read{
+    border: none;
+    width: 50%;
+    height: 50%;
+    align-self: center;
+    justify-self: center;
+    padding: 2rem 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

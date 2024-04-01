@@ -1,0 +1,55 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+      <div class="wrapper">
+        <button class="add-button">+</button>
+      <form class="entry-box">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-row">
+          <label for="pages">Pages</label>
+          <input type="number" id="pages" required />
+        </div>
+        <div class="form-row">
+          <label for="read">Read/Not-Read</label>
+          <input type="checkbox" id="read" required />
+        </div>
+        <div class="form-row">
+          <label for="author">Author</label>
+          <input type="text" id="author" required />
+        </div>
+        <div class="form-row-submit">
+          <input type="submit" value="Submit" class="submit" />
+        </div>
+      </form>
+
+      <!-- library wrapper -->
+      <div class="library">
+          <!-- library Header -->
+          
+          <div class="library-header">
+              <h4>Name</h4>
+              <h4>pages</h4>
+              <h4>read</h4>
+              <h4>author</h4>
+              <h4>delete</h4>
+            </div>
+            
+            <!-- library List -->
+        <div class="library-list"></div>
+      </div>
+
+
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
